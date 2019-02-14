@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <%= simple_form_for([@plant, @plant_tag]) do |f| %>
+        <%= f.association :tag %>
+        <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
